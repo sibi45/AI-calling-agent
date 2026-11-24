@@ -42,8 +42,17 @@ audio_diagnostics/
 # ==============================================================================
 # Large AI Model Weights (>100MB cannot be pushed to GitHub)
 # ==============================================================================
-models/kokoro/*.onnx
-models/kokoro/*.bin
+models/**/*.onnx
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.safetensors
+models/**/*.gguf
+*.onnx
+*.bin
+*.safetensors
+*.gguf
+!models/**/.gitkeep
 !models/kokoro/.gitkeep
 
 # ==============================================================================
